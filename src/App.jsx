@@ -4,27 +4,32 @@ import './App.css';
 
 function App() {
 
-  const [count, setCount]= useState(0)
+  const [valoareTemperatura, setValoareTemperatura]= useState(10)
 
-  const handleClickOne = () => {
-    setCount(count + 1)
+
+  const increse = () => {
+   setValoareTemperatura(valoareTemperatura + 1)
   }
 
-  const handleClickTwo = () => {
-    setCount(count - 1)
+  const descrise = () => {
+    setValoareTemperatura(valoareTemperatura - 1)
   }
 
   return (
     <div className="App">
       <header className="App-header">
-       
-        <h1>{count}</h1>
+        <div className='container'>
 
-        <div className="buttonul">
-        <button onClick={handleClickOne }>+</button>
-        <button onClick={handleClickTwo}>-</button>
+        <div className={'display-temperature ${blue}' }>
+        <h1>{valoareTemperatura}</h1>
         </div>
 
+        <div className="buttonul">
+        <button onClick={increse }>+</button>
+        <button onClick={descrise}>-</button>
+        </div>
+
+        </div>  
       </header>
     </div>
   );
