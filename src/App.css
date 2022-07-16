@@ -57,7 +57,7 @@ button {
   align-items: center;
   margin: 40px 0;
   border: 10px solid white;
-  transition: background 0.5s;
+  transition: background 0s;
 }
 
 
@@ -72,10 +72,19 @@ button {
   align-items: center;
 }
 
+.freeze {
+  background-color: rgb(44, 44, 252);
+}
+
+.medium {
+  background-color: rgb(145, 243, 145);
+}
+
+.nothot {
+  background-color: aqua;
+}
+
 .hot {
   background-color: red;
 }
 
-.cold {
-  background-color: blue;
-}
