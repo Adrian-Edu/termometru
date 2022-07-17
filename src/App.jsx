@@ -10,12 +10,12 @@ function App() {
         <div className='container'>
 
         <div className="display-temperature">
-        <h1>Salut</h1>
+        <h1>Nimic</h1>
         </div>
 
         <div className="buttonul">
-        <button>+</button>
         <button>-</button>
+        <button>+</button>
         </div>
 
         </div>  
